@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: #191d28;
+    counter-reset: Serial; 
+}
+
+.nav-content{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo h3{
+    color: rgb(199, 199, 199);
+}
+
+.logo a{
+    color: rgba(0, 255, 255, 0.795);
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    margin: 0 7px;
+    border-radius: 8px;
+    padding: 4px 12px;
+    color: white;
+    font-size: 20px;
+    background-color: #393b3f;
+}
+
+.btn svg{
+    fill: white;
+}
+
+.btn-tele{
+    background: rgba(0, 255, 255, 0.774);
+}
+
+/* main content */
+
+.main-content h1{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.price-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.price-bar h1{
+    color: aqua;
+    font-size: 45px;
+}
+
+.price-bar #price h1{
+    font-size: 55px;
+    color: white;
+}
+
+
+.main-content h2{
+    color: rgba(255, 255, 255, 0.699);
+    text-align: center;
+    padding: 8px 0;
+
+}
+
+
+/* Price table */
+
+.price-table table{
+    margin: 25px auto;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    /* border-radius: 50px; */
+    border-radius: 30px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+.price-table table th{
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 30px;
+    padding: 10px 35px;
+}
+.price-table table td{
+    padding: 10px 35px;
+    text-align: center;
+    color: white;
+    border-collapse:collapse;
+}
+.price-table table tr:not(:first-child){
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 20px;
+    background-color: #393b3f;
+    
+}
+
+/* For adding serial number */
+tr td:first-child:before
+{
+  counter-increment: Serial;      /* Increment the Serial counter */
+  content: counter(Serial); /* Display the counter */
+}
